@@ -29,7 +29,7 @@ from simulator.telemetry import (
 # ============================================================
 
 DT = 0.1              # 10 Hz
-SIMULATION_DURATION = 1020.0
+SIMULATION_DURATION = 180.0
 
 CSV_FILE = (
     "data/missions/mission_001.csv"
@@ -47,7 +47,7 @@ def main():
     fault_generator = FaultGenerator()
 
     fault_generator.set_fault(
-        "SENSOR_DRIFT",
+        "COOLING_DEGRADATION",
         start_time=8.0,
         ramp_duration=30.0
     )
