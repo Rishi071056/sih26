@@ -381,7 +381,7 @@ class AeroPistonEngine:
         # -----------------------------------------------------
 
         degradation_heat_penalty = (
-            0.65
+            1.2
             * (1.0 - cooling_health)
             * (
                 0.30
